@@ -7,5 +7,6 @@ end
 
 sum = ARGV.map(&:to_i).sum
 all = 5
+minutes = (all * 8 * 60) - sum
 
-puts all - (sum / 60 / 5)
+puts (minutes / 60 / 8.0).round(1)
